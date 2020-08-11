@@ -1,4 +1,7 @@
-#number of mins script will run
+#Script Created by: MaskedW00T
+#Change any of the parameters below to your needs.
+
+#total number of mins script will run.
 param($minutes = 240)
 
 #opens Notepad.exe to collect input
@@ -9,5 +12,5 @@ $myshell = New-Object -com "Wscript.Shell"
 
 for ($i = 0; $i -lt $minutes; $i++) {
   Start-Sleep -Seconds 60
-  $myshell.sendkeys("# ")
+  $myshell.sendkeys("# ") #<--- symbol inside quote will be placed each interval. 
 }
