@@ -11,6 +11,6 @@ Start-Process -FilePath "notepad.exe"
 $myshell = New-Object -com "Wscript.Shell"
 
 for ($i = 0; $i -lt $minutes; $i++) {
-  Start-Sleep -Seconds 60
+  Start-Sleep -Seconds 60 #<--- Time in interval in seconds. Change to desired.
   $myshell.sendkeys("# ") #<--- symbol inside quote will be placed each interval. 
 }
